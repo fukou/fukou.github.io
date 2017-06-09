@@ -587,6 +587,16 @@ article:last-child {
     margin-bottom: 0%;
 }
 
+article:last-child a {
+    color:#444;
+    -webkit-transition:0.6s;
+    transition: 0.6s;
+}
+
+article:last-child a:hover {
+    color:#ff9b8b;
+}
+
 article h1 {
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: capitalize;
