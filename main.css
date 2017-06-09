@@ -271,7 +271,7 @@ main.wrapper .numbering[class*="nmbr-1"]:before {
 }
 
 main.wrapper .numbering[class*="nmbr-2"] {
-    top: 150vh;
+    top: 26%;
     color: #fff;
 }
 
@@ -636,6 +636,26 @@ article a.more-btn svg {
     width: 25px;
     vertical-align: -10px;
     margin-right: 10px;
+}
+
+.more-btn.wrk-pgs {
+    background-color:#444!important;
+    cursor:not-allowed;
+}
+
+.more-design-btn {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color:#fff;
+    text-decoration: none;
+    font-size: calc(20px + 1.2em);
+    margin-bottom: 9%;
+    margin-top: 9%;
+}
+
+.more-design-btn svg {
+    vertical-align:-3px;
 }
 
 .photoset-grid {
