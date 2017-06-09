@@ -654,6 +654,7 @@ article a.more-btn svg {
 }
 
 .more-design-btn {
+    position: relative;
     width: 100%;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
