@@ -1,1 +1,0 @@
-$(document).ready(function(){var credit="fku-code",credit2="fukuo_crd",label="A THEME BY FUKUO";label2="&copy;",$(".body_aside").append('<a href="http://fukuo.tumblr.com" class="'+credit+'">'+label+"</a>"),$(".holder_description").append('<a href="http://fukuo.tumblr.com" class="'+credit2+'">'+label2+"</a>");});
