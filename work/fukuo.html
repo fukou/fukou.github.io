@@ -20,12 +20,12 @@
             <span class="type-project">Portfolio Website and Blog</span>
         </div>
         
-        <div role="button" class="scroll-down"><a href="#"><svg id="i-arrow-bottom" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <div role="button" class="scroll-down"><a href="#goto_section"><svg id="i-arrow-bottom" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                             <path d="M6 22 L16 30 26 22 M16 30 L16 2" />
                         </svg>  READ MORE</a></div>
     </header>
 
-    <section>
+    <section id="goto_section">
         <div class="inner_section">
             <div data-aos="fade-up" data-aos-easing="ease-out-cubic"data-aos-duration="900" class="grid-section">
                 <h2><span class="highlight-one">Overview</span></h2>
@@ -105,6 +105,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.1/SmoothScroll.min.js"></script>
     <script>
         AOS.init();
+        
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 600, function(){
+                    window.location.hash = hash;
+                  });
+                } // End if
+             });
+    });
     </script>
 </body>
 
