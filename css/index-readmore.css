@@ -337,6 +337,17 @@ nav#other-project ul li {
     border-radius: 10px;
 }
 
+nav#other-project ul li.wip-p {
+    background-color:#ccc;
+    cursor: not-allowed;
+} nav#other-project ul li.wip-p a, nav#other-project ul li.wip-p span, nav#other-project ul li.wip-p  {
+    color:#777;
+}
+
+nav#other-project ul li.wip-p svg {
+    color:#222!important;
+}
+
 nav#other-project ul li:hover {
     background-color: #C8E4E7;
     color: #222;
@@ -374,7 +385,7 @@ nav#other-project ul li a:hover svg {
 }
 
 nav#other-project ul li:hover span,
-nav#other-project ul li:hover svg {
+nav#other-project ul li:first-child:hover svg, nav#other-project ul li:last-child:hover svg {
     color: #222;
 }
 
@@ -398,7 +409,15 @@ nav#other-project ul li:last-child {
     text-align: right;
 }
 
-nav#other-project ul li svg {
+nav#other-project ul li:first-child svg {
+    color: #fff;
+    margin: 0 -2.5em 0 3.5em;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+nav#other-project ul li:last-child svg {
     color: #fff;
     margin: 0 3.5em 0 -2.5em;
     -webkit-transition: 0.4s;
