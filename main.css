@@ -1,5 +1,11 @@
 body {
     background-color: #C8E4E7;
+    background-attachment: fixed;
+/*
+    background: -webkit-linear-gradient(340deg, rgba(254, 187, 187, 1) 38%, rgba(169, 203, 207, 1) 75%);
+    background: -o-linear-gradient(340deg, rgba(254, 187, 187, 1) 38%, rgba(169, 203, 207, 1) 75%);
+    background: linear-gradient(70deg, rgba(254, 187, 187, 1) 38%, rgba(169, 203, 207, 1) 75%);
+*/
     font-family: var(--main-fonts);
     line-height: 160%;
     overflow-x: hidden;
@@ -305,7 +311,7 @@ main#main_work {
 }
 
 main#main_work .inner_main-work {
-    max-width: 1200px;
+    max-width: 1700px;
     margin: 0 auto;
     counter-reset: section;
     display: grid;
@@ -331,7 +337,7 @@ main#main_work .inner_main-work > .grid-main:before {
 
 main#main_work .inner_main-work > .grid-main img {
     margin-bottom: 1em;
-    box-shadow: 4px 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 main#main_work .inner_main-work > .grid-main h1 {
@@ -550,6 +556,32 @@ main#about-p {
     padding: 5em;
 }
 
+main#about-p .scroll-down {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: bold;
+    font-size: 0.8em;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+}
+
+main#about-p .scroll-down a {
+    display: block;
+    padding: 1em 2em;
+    color: #fff;
+}
+
+main#about-p .scroll-down a svg {
+    width:22px;
+    vertical-align: middle;
+    margin-right: 1em;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
 main#about-p .inner_image {
     position: absolute;
     left: 45%;
@@ -558,8 +590,12 @@ main#about-p .inner_image {
     transform: translate(-50%, -50%);
     background-image: url(img/y.jpg);
     background-size: cover;
+    /*
     width: calc(100% / 2 + 20px);
     height: 60vh;
+*/
+    width: 700px;
+    height: 410px;
     z-index: -1;
     -webkit-animation: fadein 6s;
     /* Safari, Chrome and Opera > 12.1 */
@@ -782,6 +818,10 @@ section.section_exp .inner_section-exp > .grid-exps .year-exp span {
         padding: 2em;
     }
     
+    .scroll-down {
+        display: none;
+    }
+
     main#about-p .inner_about-p > .grid-about .profile-p {
         display: block;
         width: 100%;
