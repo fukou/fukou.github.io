@@ -1,2 +1,7 @@
-# fukou.github.io
-Portfolio website for work. If I have time, I will  make this website to be more interactive and fancy. This website is used for my CV online — or you can visit my [LinkedIn profile] (https://www.linkedin.com/in/faizichsanjaya) :notebook_with_decorative_cover:. You can find my projects and works in there.
+# fukou.github.io — Archived
+
+This repository previously hosted **FUKUO**, a personal portfolio website (2019). The site is now retired.
+
+It has been replaced with a minimal redirect page that points visitors to **[fukuo.design](https://fukuo.design)**, and uses a `<link rel="canonical">` tag so search engines consolidate this domain's ranking signals toward the new site.
+
+No further development will happen here.
